@@ -66,7 +66,7 @@ const I18N = {
 
     about: "About",
     aboutText:
-      "I’m a Fullstack JavaScript student building small web apps and games while improving React state patterns and TypeScript. I care about clean structure, readable code, and smooth user experience. I’m currently looking for a LIA internship (Sweden) or a junior position.",
+      "I’m a Fullstack JavaScript student building small web apps and games while learning React state patterns and TypeScript. I care about clean structure, readable code, and smooth user experience. I’m currently looking for a LIA internship (Sweden) or a junior position.",
 
     contact: "Contact",
     contactSub: "Best way to reach me is email or LinkedIn.",
@@ -110,7 +110,7 @@ const I18N = {
 
     about: "Om mig",
     aboutText:
-      "Jag är en Fullstack JavaScript-student som bygger små webbappar och spel samtidigt som jag utvecklar React state-mönster och TypeScript. Jag gillar tydlig struktur, läsbar kod och en smidig användarupplevelse. Jag söker just nu LIA (Sverige) eller en junior position.",
+      "Jag är en Fullstack JavaScript-student som bygger små webbappar och spel samtidigt som jag lär mig React state-mönster och TypeScript. Jag gillar tydlig struktur, läsbar kod och en smidig användarupplevelse. Jag söker just nu LIA (Sverige) eller en junior position.",
 
     contact: "Kontakt",
     contactSub: "Bäst att nå mig via e-post eller LinkedIn.",
