@@ -9,7 +9,7 @@
   --text: rgba(255, 255, 255, 0.92);
   --muted: rgba(255, 255, 255, 0.68);
   --muted-2: rgba(255, 255, 255, 0.52);
-  --header-offset: 40px;
+  /* --header-offset: 40px; */
 
   /* Muted amber/yellow */
   --accent: #f2c14e;
@@ -72,7 +72,7 @@ a {
    Header
 ========= */
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -144,7 +144,7 @@ a {
 ========= */
 .section {
   padding: 44px 0;
-  scroll-margin-top: var(--header-offset);
+  /* scroll-margin-top: var(--header-offset); */
 }
 
 .hero {
