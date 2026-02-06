@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dennis X Cederqvist — Fullstack JS Student</title>
+
+    <meta
+      name="description"
+      content="Portfolio landing page for Dennis X Cederqvist. Projects, skills, and contact."
+    />
+
+    <!-- Basic Open Graph -->
+    <meta property="og:title" content="Dennis X Cederqvist — Portfolio" />
+    <meta
+      property="og:description"
+      content="Projects, skills, and contact info."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./main.js"></script>
+    <script defer src="./menu.js"></script>
+
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipToContent">Skip to content</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="brand" aria-label="Brand">
+            <span class="brand__mark" aria-hidden="true">DxC</span>
+            <span class="brand__sr">Dennis X Cederqvist</span>
+            </div>
+
+            <div class="header__actions">
+            <button
+                class="menu-btn"
+                type="button"
+                id="menuBtn"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu"
+            >
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+                <span class="menu-btn__bar" aria-hidden="true"></span>
+            </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu overlay -->
+        <div class="menu" id="mobileMenu" hidden>
+            <div class="menu__backdrop" data-menu-close aria-hidden="true"></div>
+
+            <div class="menu__panel" role="dialog" aria-modal="true" aria-label="Menu">
+            <div class="menu__top">
+                <div class="menu__brand">
+                <span class="brand__mark" aria-hidden="true">DxC</span>
+                <span class="menu__title" data-i18n="menu">Menu</span>
+                </div>
+
+                <button
+                class="menu__close"
+                type="button"
+                data-menu-close
+                aria-label="Close menu"
+                >
+                ×
+                </button>
+            </div>
+
+            <nav class="menu__nav" aria-label="Site">
+                <a class="menu__link" href="#projects" data-menu-close data-i18n="projects">Projects</a>
+                <a class="menu__link" href="#skills" data-menu-close data-i18n="skills">Skills</a>
+                <a class="menu__link" href="#about" data-menu-close data-i18n="about">About</a>
+                <a class="menu__link" href="#contact" data-menu-close data-i18n="contact">Contact</a>
+            </nav>
+
+            <div class="menu__divider" role="separator" aria-hidden="true"></div>
+
+            <!-- Language toggle moved into menu -->
+            <button
+                class="lang-toggle lang-toggle--menu"
+                type="button"
+                id="langToggle"
+                aria-label="Toggle language"
+            >
+                <span class="lang-toggle__item lang-toggle__item--active" data-lang="en">EN</span>
+                <span class="lang-toggle__sep">|</span>
+                <span class="lang-toggle__item" data-lang="sv">SV</span>
+            </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="section hero">
+        <div class="container">
+          <div class="reveal reveal--up">
+            <p class="eyebrow" data-i18n="heroEyebrow">Portfolio</p>
+
+            <h1 class="hero__name" data-i18n="name">Dennis X Cederqvist</h1>
+            <p class="hero__title" data-i18n="title">Fullstack JS Student</p>
+
+            <p class="hero__tagline" data-i18n="tagline">
+              Focused on frontend UX and solid fundamentals.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="https://github.com/DennisCederqvist" target="_blank" rel="noreferrer">
+                <span data-i18n="github">GitHub</span>
+              </a>
+              <a class="btn btn--secondary" href="https://www.linkedin.com/in/dennis-cederqvist/" target="_blank" rel="noreferrer">
+                <span data-i18n="linkedin">LinkedIn</span>
+              </a>
+              <a class="btn btn--ghost" href="mailto:denniz.cederquist@gmail.com">
+                <span data-i18n="email">Email</span>
+              </a>
+            </div>
+
+            <p class="hero__note" data-i18n="heroNote">
+              Open to LIA internship (Sweden) or junior roles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__head reveal reveal--up">
+            <h2 class="section__title" data-i18n="projects">Projects</h2>
+            <p class="section__subtitle" data-i18n="projectsSub">
+              Live demos and source code.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal reveal--left">
+              <h3 class="card__title">Trake</h3>
+              <p class="card__text" data-i18n="trakeDesc">A Snake clone.</p>
+              <div class="card__actions">
+                <a class="btn btn--secondary" href="https://denniscederqvist.github.io/Trake/" target="_blank" rel="noreferrer">
+                  <span data-i18n="liveDemo">Live demo</span>
+                </a>
+                <a class="btn btn--ghost" href="https://github.com/DennisCederqvist/Trake" target="_blank" rel="noreferrer">
+                  <span data-i18n="code">Code</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal reveal--right">
+              <h3 class="card__title">Whack-A-Mole</h3>
+              <p class="card__text" data-i18n="wamDesc">A proof of concept.</p>
+              <div class="card__actions">
+                <a class="btn btn--secondary" href="https://denniscederqvist.github.io/Whack-A-Mole/" target="_blank" rel="noreferrer">
+                  <span data-i18n="liveDemo">Live demo</span>
+                </a>
+                <a class="btn btn--ghost" href="https://github.com/DennisCederqvist/Whack-A-Mole" target="_blank" rel="noreferrer">
+                  <span data-i18n="code">Code</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal reveal--left">
+              <h3 class="card__title">Happy Hails Art</h3>
+              <p class="card__text" data-i18n="hhaDesc">A commission website.</p>
+              <div class="card__actions">
+                <a class="btn btn--secondary" href="https://denniscederqvist.github.io/Happy-Hails-Art/" target="_blank" rel="noreferrer">
+                  <span data-i18n="liveDemo">Live demo</span>
+                </a>
+                <a class="btn btn--ghost" href="https://github.com/DennisCederqvist/Happy-Hails-Art" target="_blank" rel="noreferrer">
+                  <span data-i18n="code">Code</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal reveal--right">
+              <h3 class="card__title">WeatherApp</h3>
+              <p class="card__text" data-i18n="weatherDesc">Created when learning API handling.</p>
+              <div class="card__actions">
+                <a class="btn btn--secondary" href="https://denniscederqvist.github.io/WeatherApp/" target="_blank" rel="noreferrer">
+                  <span data-i18n="liveDemo">Live demo</span>
+                </a>
+                <a class="btn btn--ghost" href="https://github.com/DennisCederqvist/WeatherApp" target="_blank" rel="noreferrer">
+                  <span data-i18n="code">Code</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section__head reveal reveal--up">
+            <h2 class="section__title" data-i18n="skills">Skills</h2>
+            <p class="section__subtitle" data-i18n="skillsSub">
+              Category overview.
+            </p>
+          </div>
+
+          <div class="grid grid--skills">
+            <article class="card reveal reveal--left">
+              <div class="card__row">
+                <h3 class="card__title" data-i18n="frontend">Frontend</h3>
+                <div class="stars" aria-label="4 out of 5">
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star" aria-hidden="true">★</span>
+                </div>
+              </div>
+              <ul class="list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li data-i18n="responsiveDesign">Responsive design</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+              </ul>
+            </article>
+
+            <article class="card reveal reveal--right">
+              <div class="card__row">
+                <h3 class="card__title" data-i18n="backend">Backend</h3>
+                <div class="stars" aria-label="3 out of 5">
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star" aria-hidden="true">★</span>
+                  <span class="star" aria-hidden="true">★</span>
+                </div>
+              </div>
+              <ul class="list">
+                <li>Node.js</li>
+                <li>REST APIs</li>
+                <li data-i18n="databasesBasic">Databases (basic)</li>
+              </ul>
+            </article>
+
+            <article class="card reveal reveal--left">
+              <div class="card__row">
+                <h3 class="card__title" data-i18n="tools">Tools</h3>
+                <div class="stars" aria-label="4 out of 5">
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star" aria-hidden="true">★</span>
+                </div>
+              </div>
+              <ul class="list">
+                <li>Git & GitHub</li>
+                <li>Vite / npm</li>
+                <li>TypeScript</li>
+                <li data-i18n="debugStructure">Debugging & structure</li>
+              </ul>
+            </article>
+
+            <article class="card reveal reveal--right">
+              <div class="card__row">
+                <h3 class="card__title" data-i18n="extra">Extra</h3>
+                <div class="stars" aria-label="3 out of 5">
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star star--on" aria-hidden="true">★</span>
+                  <span class="star" aria-hidden="true">★</span>
+                  <span class="star" aria-hidden="true">★</span>
+                </div>
+              </div>
+              <ul class="list">
+                <li data-i18n="uiPolish">UI polish / micro-interactions</li>
+                <li data-i18n="accessibilityBasics">Accessibility basics</li>
+                <li data-i18n="documentation">Documentation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head reveal reveal--up">
+            <h2 class="section__title" data-i18n="about">About</h2>
+          </div>
+
+          <div class="card reveal reveal--up">
+            <p class="card__text" data-i18n="aboutText">
+              I’m a Fullstack JavaScript student building small web apps and games while improving React state patterns and TypeScript. I care about clean structure, readable code, and smooth user experience. I’m currently looking for a LIA internship (Sweden) or a junior position.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title" data-i18n="contact">Contact</h2>
+            <p class="section__subtitle" data-i18n="contactSub">
+              Best way to reach me is email or LinkedIn.
+            </p>
+          </div>
+
+          <div class="contact-actions reveal">
+            <a class="btn btn--primary btn--wide" href="mailto:denniz.cederquist@gmail.com">
+              <span data-i18n="emailMe">Email me</span>
+            </a>
+            <a class="btn btn--secondary btn--wide" href="https://www.linkedin.com/in/dennis-cederqvist/" target="_blank" rel="noreferrer">
+              <span data-i18n="messageLinkedIn">Message on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text" data-i18n="footerText">
+          Built with HTML/CSS/JS • Hosted on GitHub Pages
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

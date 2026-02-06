@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>DxC — Links</title>
+  <meta name="description" content="Mobilförst landing page med länkar och skills." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ditt Namn" />
+  <meta property="og:description" content="Full-stack JavaScript • Projekt • Länkar" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Bakgrunds-“blobs” (animeras i CSS) -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grid"></span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Till toppen">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="brandText">DxC</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">Om</a>
+      <a href="#skills">Kunskaper</a>
+      <a href="#links">Länkar</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="card hero" id="top">
+      <div class="heroLeft">
+        <p class="kicker">Full-stack JavaScript • React • Node • TypeScript</p>
+        <h1>Bygger små, snabba webappar som känns bra att använda.</h1>
+        <p class="lead" id="about">
+          Full-stack JavaScript-student med fokus på UI, struktur och användarupplevelse.
+          <br>
+          Bygger webappar med React, Node och TypeScript.
+          <br>
+          Söker LIA/praktik där jag kan växa som utvecklare och bidra från första dagen.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#links">Kontakta / Länkar</a>
+        </div>
+
+        <div class="meta">
+          <span class="pill" id="statusPill">Tillgänglig för LIA</span>
+          <span class="pill subtle">Malmö, Sverige</span>
+        </div>
+      </div>
+
+      <div class="heroRight">
+        <div class="avatar" aria-hidden="true">
+          <div class="ring"></div>
+          <div class="face">
+            <div class="spark s1"></div>
+            <div class="spark s2"></div>
+            <div class="spark s3"></div>
+          </div>
+        </div>
+
+        <div class="miniCards">
+          <article class="mini">
+            <h3>Fokus</h3>
+            <p>Frontend UX + stabil backend.</p>
+          </article>
+          <article class="mini">
+            <h3>Just nu</h3>
+            <p>React-komponenter, state & API.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card" id="skills">
+      <div class="sectionHead">
+        <h2>Kunskaper</h2>
+        <p>En översikt.</p>
+      </div>
+
+      <div class="skillsGrid">
+        <article class="skill">
+          <div class="skillTop">
+            <h3>Frontend</h3>
+            <span class="lvl" data-level="4">★★★★☆</span>
+          </div>
+          <ul>
+            <li>HTML, CSS, responsiv design</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+          </ul>
+        </article>
+
+        <article class="skill">
+          <div class="skillTop">
+            <h3>Backend</h3>
+            <span class="lvl" data-level="3">★★★☆☆</span>
+          </div>
+          <ul>
+            <li>Node.js</li>
+            <li>REST API</li>
+            <li>Databaser</li>
+          </ul>
+        </article>
+
+        <article class="skill">
+          <div class="skillTop">
+            <h3>Verktyg</h3>
+            <span class="lvl" data-level="4">★★★★☆</span>
+          </div>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Vite / npm</li>
+            <li>TypeScript</li>
+            <li>Debuggning & struktur</li>
+          </ul>
+        </article>
+
+        <article class="skill">
+          <div class="skillTop">
+            <h3>Extra</h3>
+            <span class="lvl" data-level="3">★★★☆☆</span>
+          </div>
+          <ul>
+            <li>UI-polish / micro-interactions</li>
+            <li>Accessibility basics</li>
+            <li>Dokumentation</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="chips">
+        <button class="chip" type="button" data-chip="React">React</button>
+        <button class="chip" type="button" data-chip="TypeScript">TypeScript</button>
+        <button class="chip" type="button" data-chip="Node">Node</button>
+        <button class="chip" type="button" data-chip="CSS">CSS</button>
+        <button class="chip" type="button" data-chip="Git">Git</button>
+      </div>
+
+      <p class="hint" id="chipHint" aria-live="polite"></p>
+    </section>
+
+    <!-- LINKS -->
+    <section class="card" id="links">
+      <div class="sectionHead">
+        <h2>Länkar</h2>
+        <p>Snabbaste vägen till mig.</p>
+      </div>
+
+      <div class="linkGrid">
+        <a class="linkCard" href="https://www.linkedin.com/in/dennis-cederqvist" target="_blank" rel="noopener noreferrer">
+          <div class="icon" aria-hidden="true">in</div>
+          <div class="txt">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/dennis-cederqvist</span>
+          </div>
+          <div class="go" aria-hidden="true">↗</div>
+        </a>
+
+        <a class="linkCard" href="https://github.com/DennisCederqvist" target="_blank" rel="noopener noreferrer">
+          <div class="icon" aria-hidden="true">⌘</div>
+          <div class="txt">
+            <strong>GitHub</strong>
+            <span>github.com/DennisCederqvist</span>
+          </div>
+          <div class="go" aria-hidden="true">↗</div>
+        </a>
+
+        <a class="linkCard" href="mailto:denniz.cederquist@gmail.com">
+          <div class="icon" aria-hidden="true">✉</div>
+          <div class="txt">
+            <strong>Email</strong>
+            <span>denniz.cederquist@gmail.com</span>
+          </div>
+          <div class="go" aria-hidden="true">→</div>
+        </a>
+
+        <!-- <a class="linkCard" href="https://DIN-PORTFOLIO-LÄNK" target="_blank" rel="noopener noreferrer">
+          <div class="icon" aria-hidden="true">★</div>
+          <div class="txt">
+            <strong>Portfolio</strong>
+            <span>DIN-PORTFOLIO-LÄNK</span>
+          </div>
+          <div class="go" aria-hidden="true">↗</div>
+        </a> -->
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Dennis X Cederqvist</span>
+        <span class="sep">•</span>
+        <a href="#top">Till toppen</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
